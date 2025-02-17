@@ -5,13 +5,15 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "server": "cross-env HOST=0.0.0.0 PORT=8086 node server.js",
+    "start": "node server.js PORT=$PORT"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-  "json-server": "^0.17.0"
+    "dotenv": "^16.4.7",
+    "json-server": "^0.17.0"
   },
   "type": "module"
 }

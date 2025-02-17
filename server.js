@@ -1,5 +1,7 @@
 import jsonServer from 'json-server';
+import dotenv from 'dotenv';
 
+dotenv.config();
 // Create server
 const server = jsonServer.create();
 const router = jsonServer.router('jobs.json');  // JSON database file
